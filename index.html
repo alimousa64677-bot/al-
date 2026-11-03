@@ -8,7 +8,7 @@
 <title>مدارت</title>
 <style>
 :root{--bg:#f4f5f7;--surface:#fff;--ink:#172235;--muted:#7b8798;--gold:#b58a43;--gold-soft:#f5efdf;--nav:#111c2d;--line:#e8ebef;--green:#278568;--shadow:0 8px 28px rgba(24,37,55,.055)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1440px;margin:auto;min-height:100vh;display:grid;grid-template-columns:255px 1fr}.sidebar{background:var(--nav);color:#fff;padding:26px 18px;display:flex;flex-direction:column;min-height:100vh}.brand{display:flex;align-items:center;gap:12px;padding:0 8px 28px;border-bottom:1px solid #ffffff15}.brand-mark{height:43px;width:43px;border-radius:13px;background:linear-gradient(145deg,#d7bd83,#a47a37);display:grid;place-items:center;color:#152033;font-size:23px}.brand strong{font-size:16px;display:block}.brand small{color:#aab5c4;font-size:11px}.nav-label{color:#7f8b9d;font-size:10px;padding:24px 12px 9px}.nav button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#bac4d2;padding:12px;border-radius:11px;text-align:right;margin:3px 0;font-size:13px}.nav button:hover,.nav button.active{background:#ffffff12;color:#e8c98a}.nav .ico{width:21px;text-align:center;font-size:17px}.side-bottom{margin-top:auto;border-top:1px solid #ffffff15;padding:17px 8px 0;color:#8794a6;font-size:11px;line-height:1.8}.main{min-width:0;padding:27px 34px 35px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:14px}.crumb{font-size:12px;color:var(--muted);margin-bottom:6px}.page-title{font-size:23px;font-weight:700;margin:0}.user{display:flex;align-items:center;gap:10px}.avatar{width:40px;height:40px;border-radius:50%;background:#e8dfcb;color:#73572c;display:grid;place-items:center;font-weight:bold;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.user strong{font-size:12px;display:block}.user small{font-size:10px;color:var(--muted)}.welcome{background:var(--nav);border-radius:18px;color:#fff;padding:27px 30px;display:flex;justify-content:space-between;align-items:center;gap:18px;position:relative;overflow:hidden}.welcome:after{content:"";position:absolute;width:270px;height:270px;border:1px solid #d9bd7b26;border-radius:50%;left:5%;top:-145px;box-shadow:0 0 0 25px #d9bd7b08,0 0 0 55px #d9bd7b06}.welcome-content{position:relative;z-index:1}.welcome .eyebrow{color:#d7bd84;font-size:11px;letter-spacing:.4px}.welcome h2{font-size:25px;line-height:1.55;margin:9px 0 5px}.welcome p{color:#b7c1ce;font-size:12px;line-height:1.8;margin:0 0 16px}.primary{background:#c5a263;color:#182235;border:0;border-radius:9px;padding:11px 17px;font-size:12px;font-weight:bold}.primary:hover{background:#d8b879}.welcome-art{position:relative;z-index:1;width:150px;height:115px;display:grid;place-items:center;flex:none}.monogram{width:92px;height:92px;border:1px solid #d8bd804f;border-radius:50%;display:grid;place-items:center;color:#d9bf87;font-family:Georgia,serif;font-size:35px;box-shadow:0 0 0 12px #ffffff06,0 0 0 25px #ffffff04}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:18px 0 27px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:16px 17px;box-shadow:var(--shadow)}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px}.stat-icon{width:30px;height:30px;border-radius:9px;background:var(--gold-soft);display:grid;place-items:center;color:var(--gold);font-size:15px}.stat strong{font-size:24px;display:block;margin-top:10px;font-weight:700}.stat small{font-size:10px;color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 13px;gap:10px}.section-head h3{font-size:16px;margin:0}.section-head span{font-size:11px;color:var(--muted)}.text-btn{border:0;background:none;color:var(--gold);font-size:11px}.content-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,.8fr);gap:17px}.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.course{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:15px;text-align:right;transition:.18s;box-shadow:var(--shadow);color:var(--ink)}.course:hover{border-color:#d4bd8e;transform:translateY(-2px)}.course-icon{width:38px;height:38px;border-radius:10px;background:#f5f1e8;color:#9c783e;display:grid;place-items:center;font-size:19px;margin-bottom:12px}.course strong{font-size:12px;display:block}.course small{font-size:10px;color:var(--muted);display:block;margin-top:5px}.box{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:17px;box-shadow:var(--shadow)}.rank-item{display:flex;align-items:center;gap:9px;padding:11px 0;border-bottom:1px solid var(--line)}.rank-item:last-child{border:0;padding-bottom:0}.rank-no{width:20px;color:var(--gold);font-size:12px;font-weight:bold}.rank-avatar{width:30px;height:30px;border-radius:50%;background:#edf0f4;display:grid;place-items:center;font-size:11px;color:#4f6076}.rank-info{flex:1}.rank-info strong{font-size:11px;display:block}.rank-info small{font-size:9px;color:var(--muted)}.rank-score{font-size:10px;color:#7c6843}.page{display:none}.page.active{display:block}.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:19px;box-shadow:var(--shadow)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:15px}.muted{color:var(--muted);font-size:11px}.back{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:8px;color:var(--ink);font-size:11px}.item-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:right;color:var(--ink);width:100%}.item:hover{border-color:#cdb27a}.item strong{font-size:12px;display:block;margin-bottom:6px}.item small{font-size:10px;color:var(--muted)}.stage-symbol{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#f5f0e5;color:#9c783e;margin-bottom:9px}.progress{height:5px;background:#edf0f3;border-radius:10px;margin-top:11px;overflow:hidden}.progress i{display:block;height:100%;background:#b99a5e}.question-title{font-size:19px;line-height:1.9;margin:20px 0}.answer-option{width:100%;padding:13px 14px;border:1px solid var(--line);background:#fff;border-radius:9px;text-align:right;margin:5px 0;font-size:13px;color:var(--ink)}.answer-option.selected{border-color:#b9995c;background:#fbf8f0}.answer-option.good{border-color:#55a78a;background:#f0faf5}.answer-option.bad{border-color:#d47b7b;background:#fff5f5}.feedback{background:#f7f8fa;border-radius:10px;padding:14px;margin-top:12px;font-size:12px;line-height:1.9}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#647184}.field input,.field select,.field textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);outline:none;font-size:12px}.field textarea{min-height:76px;resize:vertical}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:right;padding:11px;border-bottom:1px solid var(--line);font-size:11px}th{color:#8a744c}.danger{background:#fff1f1;color:#a43d3d;border:0;padding:7px 9px;border-radius:7px;font-size:10px}.secondary{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 13px;font-size:11px;color:var(--ink)}.empty{text-align:center;padding:26px;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:10px}.pill{font-size:10px;background:#f4f0e7;color:#8b7040;border-radius:20px;padding:5px 9px}.hidden{display:none!important}.footer{text-align:center;color:#9aa3af;font-size:10px;margin-top:30px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#182437;color:white;padding:11px 16px;border-radius:8px;font-size:12px;box-shadow:var(--shadow);z-index:10}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1440px;margin:auto;min-height:100vh;display:grid;grid-template-columns:255px 1fr}.sidebar{background:var(--nav);color:#fff;padding:26px 18px;display:flex;flex-direction:column;min-height:100vh}.brand{display:flex;align-items:center;gap:12px;padding:0 8px 28px;border-bottom:1px solid #ffffff15}.brand-mark{height:43px;width:43px;border-radius:13px;overflow:hidden;background:linear-gradient(145deg,#d7bd83,#a47a37);display:grid;place-items:center;color:#152033;font-size:23px}.brand strong{font-size:16px;display:block}.brand small{color:#aab5c4;font-size:11px}.nav-label{color:#7f8b9d;font-size:10px;padding:24px 12px 9px}.nav button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#bac4d2;padding:12px;border-radius:11px;text-align:right;margin:3px 0;font-size:13px}.nav button:hover,.nav button.active{background:#ffffff12;color:#e8c98a}.nav .ico{width:21px;text-align:center;font-size:17px}.side-bottom{margin-top:auto;border-top:1px solid #ffffff15;padding:17px 8px 0;color:#8794a6;font-size:11px;line-height:1.8}.main{min-width:0;padding:27px 34px 35px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:14px}.crumb{font-size:12px;color:var(--muted);margin-bottom:6px}.page-title{font-size:23px;font-weight:700;margin:0}.user{display:flex;align-items:center;gap:10px}.avatar{width:40px;height:40px;border-radius:50%;background:#e8dfcb;color:#73572c;display:grid;place-items:center;font-weight:bold;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.user strong{font-size:12px;display:block}.user small{font-size:10px;color:var(--muted)}.welcome{background:var(--nav);border-radius:18px;color:#fff;padding:27px 30px;display:flex;justify-content:space-between;align-items:center;gap:18px;position:relative;overflow:hidden}.welcome{background-image:linear-gradient(90deg,rgba(17,28,45,.94),rgba(17,28,45,.78)),var(--hero-image,none);background-size:cover;background-position:center}.brand-mark img{width:100%;height:100%;object-fit:cover}.monogram img{width:100%;height:100%;object-fit:cover;border-radius:50%}.welcome:after{content:"";position:absolute;width:270px;height:270px;border:1px solid #d9bd7b26;border-radius:50%;left:5%;top:-145px;box-shadow:0 0 0 25px #d9bd7b08,0 0 0 55px #d9bd7b06}.welcome-content{position:relative;z-index:1}.welcome .eyebrow{color:#d7bd84;font-size:11px;letter-spacing:.4px}.welcome h2{font-size:25px;line-height:1.55;margin:9px 0 5px}.welcome p{color:#b7c1ce;font-size:12px;line-height:1.8;margin:0 0 16px}.primary{background:#c5a263;color:#182235;border:0;border-radius:9px;padding:11px 17px;font-size:12px;font-weight:bold}.primary:hover{background:#d8b879}.welcome-art{position:relative;z-index:1;width:150px;height:115px;display:grid;place-items:center;flex:none}.monogram{width:92px;height:92px;overflow:hidden;border:1px solid #d8bd804f;border-radius:50%;display:grid;place-items:center;color:#d9bf87;font-family:Georgia,serif;font-size:35px;box-shadow:0 0 0 12px #ffffff06,0 0 0 25px #ffffff04}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:18px 0 27px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:16px 17px;box-shadow:var(--shadow)}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px}.stat-icon{width:30px;height:30px;border-radius:9px;background:var(--gold-soft);display:grid;place-items:center;color:var(--gold);font-size:15px}.stat strong{font-size:24px;display:block;margin-top:10px;font-weight:700}.stat small{font-size:10px;color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 13px;gap:10px}.section-head h3{font-size:16px;margin:0}.section-head span{font-size:11px;color:var(--muted)}.text-btn{border:0;background:none;color:var(--gold);font-size:11px}.content-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,.8fr);gap:17px}.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.course{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:15px;text-align:right;transition:.18s;box-shadow:var(--shadow);color:var(--ink)}.course:hover{border-color:#d4bd8e;transform:translateY(-2px)}.course-icon{width:38px;height:38px;border-radius:10px;background:#f5f1e8;color:#9c783e;display:grid;place-items:center;font-size:19px;margin-bottom:12px}.course strong{font-size:12px;display:block}.course small{font-size:10px;color:var(--muted);display:block;margin-top:5px}.box{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:17px;box-shadow:var(--shadow)}.rank-item{display:flex;align-items:center;gap:9px;padding:11px 0;border-bottom:1px solid var(--line)}.rank-item:last-child{border:0;padding-bottom:0}.rank-no{width:20px;color:var(--gold);font-size:12px;font-weight:bold}.rank-avatar{width:30px;height:30px;border-radius:50%;background:#edf0f4;display:grid;place-items:center;font-size:11px;color:#4f6076}.rank-info{flex:1}.rank-info strong{font-size:11px;display:block}.rank-info small{font-size:9px;color:var(--muted)}.rank-score{font-size:10px;color:#7c6843}.page{display:none}.page.active{display:block}.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:19px;box-shadow:var(--shadow)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:15px}.muted{color:var(--muted);font-size:11px}.back{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:8px;color:var(--ink);font-size:11px}.item-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:right;color:var(--ink);width:100%}.item:hover{border-color:#cdb27a}.item strong{font-size:12px;display:block;margin-bottom:6px}.item small{font-size:10px;color:var(--muted)}.stage-symbol{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#f5f0e5;color:#9c783e;margin-bottom:9px}.progress{height:5px;background:#edf0f3;border-radius:10px;margin-top:11px;overflow:hidden}.progress i{display:block;height:100%;background:#b99a5e}.question-title{font-size:19px;line-height:1.9;margin:20px 0}.answer-option{width:100%;padding:13px 14px;border:1px solid var(--line);background:#fff;border-radius:9px;text-align:right;margin:5px 0;font-size:13px;color:var(--ink)}.answer-option.selected{border-color:#b9995c;background:#fbf8f0}.answer-option.good{border-color:#55a78a;background:#f0faf5}.answer-option.bad{border-color:#d47b7b;background:#fff5f5}.feedback{background:#f7f8fa;border-radius:10px;padding:14px;margin-top:12px;font-size:12px;line-height:1.9}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#647184}.field input,.field select,.field textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);outline:none;font-size:12px}.field textarea{min-height:76px;resize:vertical}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:right;padding:11px;border-bottom:1px solid var(--line);font-size:11px}th{color:#8a744c}.danger{background:#fff1f1;color:#a43d3d;border:0;padding:7px 9px;border-radius:7px;font-size:10px}.secondary{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 13px;font-size:11px;color:var(--ink)}.empty{text-align:center;padding:26px;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:10px}.pill{font-size:10px;background:#f4f0e7;color:#8b7040;border-radius:20px;padding:5px 9px}.hidden{display:none!important}.footer{text-align:center;color:#9aa3af;font-size:10px;margin-top:30px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#182437;color:white;padding:11px 16px;border-radius:8px;font-size:12px;box-shadow:var(--shadow);z-index:10}
 @media(max-width:1050px){.courses,.item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.content-grid{grid-template-columns:1fr}.app{grid-template-columns:220px 1fr}.main{padding:23px}}
 @media(max-width:720px){.app{display:block}.sidebar{min-height:0;padding:10px 12px;position:sticky;top:0;z-index:5}.brand{padding:0 5px 10px;border:0}.brand-mark{width:34px;height:34px}.brand strong{font-size:13px}.brand small{font-size:9px}.nav-label,.side-bottom{display:none}.nav{display:flex;overflow:auto;gap:4px}.nav button{white-space:nowrap;width:auto;padding:9px 10px;font-size:10px}.main{padding:17px 13px}.topbar{margin-bottom:16px}.page-title{font-size:19px}.welcome{padding:20px}.welcome h2{font-size:21px}.welcome-art{width:90px}.monogram{width:67px;height:67px;font-size:26px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat{padding:12px}.stat strong{font-size:20px}.courses,.item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
 @media(max-width:420px){.courses,.item-grid{grid-template-columns:1fr}.welcome-art{display:none}.user strong{font-size:10px}}
@@ -30,7 +30,7 @@
   <div class="side-bottom">مدارت<br>منصة تعليمية لطلاب الشهادة الثانوية في ليبيا</div>
 </aside>
 <main class="main">
-  <header class="topbar"><div><div class="crumb">المساحة التعليمية / <span id="crumbPage">الرئيسية</span></div><h1 class="page-title" id="pageTitle">الرئيسية</h1></div><div class="user"><div class="avatar" id="topAvatar">ط</div><div><strong id="topName">طالب فضاء</strong><small>طالب الشهادة الثانوية</small></div></div></header>
+  <header class="topbar"><div><div class="crumb">المساحة التعليمية / <span id="crumbPage">الرئيسية</span></div><h1 class="page-title" id="pageTitle">الرئيسية</h1></div><div class="user"><div class="avatar" id="topAvatar">ط</div><div><strong id="topName">طالب مدارت</strong><small>طالب الشهادة الثانوية</small></div></div></header>
   <div id="telegramStatus" class="muted" style="margin:-15px 0 16px;line-height:1.8"></div>
 
   <section class="page active" id="page-home">
@@ -59,8 +59,8 @@
   </section>
 
   <section class="page" id="page-leaderboard">
-    <div class="section-head"><h3>لوحة ترتيب الطلاب</h3><span class="pill">ترتيب تجريبي</span></div><div class="panel" id="rankList"></div>
-    <p class="muted">الترتيب الحالي تجريبي ومحفوظ محلياً. الترتيب المشترك بين الطلاب يتطلب قاعدة بيانات وخادماً.</p>
+    <div class="section-head"><h3>لوحة ترتيب الطلاب</h3><span class="pill">نتائج هذا الجهاز</span></div><div class="panel" id="rankList"></div>
+    <p class="muted">هذه النتائج تخص هذا الجهاز فقط. الترتيب المشترك بين الطلاب يحتاج قاعدة بيانات وخادماً.</p>
   </section>
 
   <section class="page" id="page-mistakes">
@@ -69,7 +69,7 @@
 
   <section class="page" id="page-profile">
     <div class="panel">
-      <div class="toolbar"><div><h3 style="margin:0 0 5px;font-size:15px">الملف الشخصي</h3><span class="muted">عدّل بيانات العرض الخاصة بك</span></div><span class="pill">طالب فضاء</span></div>
+      <div class="toolbar"><div><h3 style="margin:0 0 5px;font-size:15px">الملف الشخصي</h3><span class="muted">عدّل بيانات العرض الخاصة بك</span></div><span class="pill">طالب مدارت</span></div>
       <div class="form-grid"><div class="field"><label>الاسم</label><input id="profileName" maxlength="40"></div><div class="field"><label>رابط الصورة الشخصية</label><input id="profilePhoto" placeholder="https://example.com/photo.jpg"></div></div>
       <button class="primary" style="margin-top:13px" onclick="saveProfile()">حفظ التعديلات</button>
     </div>
@@ -77,6 +77,31 @@
   </section>
 
   <section class="page" id="page-admin">
+    <div class="section-head"><h3>تخصيص هوية مدارت</h3><span class="pill">للإدارة فقط</span></div>
+    <div class="panel" style="margin-bottom:18px">
+      <p class="muted" style="line-height:1.8;margin-top:0">من هنا يمكنك تغيير شعار المنصة وصورة الواجهة والألوان. هذه نسخة HTML مستقلة؛ تحفظ التغييرات على هذا المتصفح فقط. لمزامنتها مع جميع الطلاب يلزم ربط خادم وقاعدة بيانات مشتركة.</p>
+      <div class="form-grid">
+        <div class="field"><label>شعار المنصة</label><input id="logoUpload" type="file" accept="image/*"><small class="muted">يفضل صورة مربعة PNG أو JPG.</small></div>
+        <div class="field"><label>صورة واجهة الرئيسية</label><input id="heroUpload" type="file" accept="image/*"><small class="muted">يفضل صورة عريضة بجودة مناسبة.</small></div>
+        <div class="field"><label>اللون الرئيسي</label><input id="accentColor" type="color" value="#b58a43"></div>
+        <div class="field"><label>لون القائمة الجانبية</label><input id="navColor" type="color" value="#111c2d"></div>
+        <div class="field"><label>لون خلفية التطبيق</label><input id="backgroundColor" type="color" value="#f4f5f7"></div>
+        <div class="field"><label>لون البطاقات</label><input id="surfaceColor" type="color" value="#ffffff"></div>
+      </div>
+      <div class="panel" style="margin-top:14px;background:var(--bg);border:1px dashed var(--gold)">
+        <strong>معاينة الهوية</strong>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:12px">
+          <div id="appearancePreviewLogo" style="width:54px;height:54px;border-radius:14px;background:var(--gold-soft);display:grid;place-items:center;font-size:25px;color:var(--gold);overflow:hidden">م</div>
+          <div><strong>مدارت</strong><div class="muted">بوابتك نحو التفوق</div></div>
+        </div>
+        <div id="appearancePreviewBanner" style="margin-top:12px;min-height:74px;border-radius:14px;background:var(--nav);color:white;padding:16px;display:flex;align-items:center">مساحة التعلم الخاصة بك</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+        <button class="primary" onclick="saveAppearance()">حفظ مظهر المنصة</button>
+        <button class="secondary" onclick="resetAppearance()">استعادة الألوان الافتراضية</button>
+      </div>
+      <div class="muted" style="margin-top:10px">ملاحظة: رفع الصور الكبيرة قد يستهلك مساحة التخزين المحلية؛ استخدم صوراً مضغوطة.</div>
+    </div>
     <div class="section-head"><h3>إدارة الأسئلة والمراحل</h3><span class="pill">نموذج تجريبي محلي</span></div>
     <div class="panel">
       <p class="muted" style="line-height:1.8;margin-top:0">أضف سؤالاً وحدد إعدادات المرحلة. يمكن تعديل عدد الأسئلة والمدة ونسبة الاجتياز من هنا.</p>
@@ -106,8 +131,8 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
 const ADMIN_ID = "8696029714";
-const TELEGRAM_USER_ID = String(window.Telegram?.WebApp?.initDataUnsafe?.user?.id ?? "");
-const IS_ADMIN = TELEGRAM_USER_ID === ADMIN_ID;
+let TELEGRAM_USER_ID = "";
+let IS_ADMIN = false;
 if (window.Telegram?.WebApp) window.Telegram.WebApp.ready();
 function syncAdminAccess(){ const b=document.getElementById("adminNav"); if(b) b.classList.toggle("hidden", !IS_ADMIN); }
 const BASE=[
@@ -127,8 +152,8 @@ const SAMPLE=[
 {id:'s3',subject:'physics',chapter:'الكهرباء والمغناطيسية',stage:'كوكب عطارد',type:'tf',question:'تقاس شدة التيار الكهربائي بوحدة الأمبير.',options:['صح','خطأ'],correct:'صح',explain:'الأمبير هو وحدة قياس شدة التيار الكهربائي.'},
 {id:'s4',subject:'chem',chapter:'الباب الأول',stage:'كوكب عطارد',type:'tf',question:'تحتوي ذرة الكربون على أربعة إلكترونات تكافؤ.',options:['صح','خطأ'],correct:'صح',explain:'التوزيع الإلكتروني للكربون هو 2،4؛ لذلك لديه أربعة إلكترونات تكافؤ.'}
 ];
-const KEY='fadaa_premium_v1';
-function initial(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x)return {...x,subjects:x.subjects||BASE,questions:x.questions||SAMPLE,answers:x.answers||[],mistakes:x.mistakes||[],settings:x.settings||{},profile:x.profile||{name:'طالب فضاء',photo:''}}}catch(e){}return{subjects:BASE,questions:SAMPLE,answers:[],mistakes:[],settings:{},profile:{name:'طالب فضاء',photo:''}}}
+const KEY='madarat_clean_v2';
+function initial(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x)return {...x,subjects:x.subjects||BASE,questions:x.questions||[],answers:x.answers||[],mistakes:x.mistakes||[],settings:x.settings||{},appearance:x.appearance||{},profile:x.profile||{name:'طالب مدارت',photo:''}}}catch(e){}return{subjects:BASE,questions:[],answers:[],mistakes:[],settings:{},appearance:{},profile:{name:'طالب مدارت',photo:''}}}
 let db=initial(),state={subject:null,chapter:null,stage:null,qs:[],index:0,selected:null,checked:false};
 const $=id=>document.getElementById(id);
 function persist(){localStorage.setItem(KEY,JSON.stringify(db));refreshStats()}
@@ -141,9 +166,118 @@ function qs(s,c,t){return db.questions.filter(q=>q.subject===s&&q.chapter===c&&q
 function setAvatar(id){let el=$(id);if(!el)return;if(db.profile.photo)el.innerHTML='<img src="'+safe(db.profile.photo)+'" onerror="this.parentElement.textContent=\'ط\'">';else el.textContent=(db.profile.name||'ط').charAt(0)}
 function refreshStats(){let correct=db.answers.filter(a=>a.correct).length;$('sCorrect').textContent=correct;$('sPoints').textContent=db.answers.reduce((n,a)=>n+a.points,0);$('sStages').textContent=new Set(db.answers.map(a=>a.key)).size;$('topName').textContent=db.profile.name;setAvatar('topAvatar')}
 const titles={home:'الرئيسية',subjects:'المواد الدراسية',quiz:'الاختبارات',leaderboard:'لوحة الترتيب',mistakes:'مراجعة الأخطاء',profile:'ملفي الشخصي',admin:'إدارة المحتوى'};
-function go(p){if(p==='admin'&&!IS_ADMIN){notify('هذه الصفحة مخصصة للإدارة فقط');return;}document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$('page-'+p).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));$('pageTitle').textContent=titles[p];$('crumbPage').textContent=titles[p];if(p==='home')home();if(p==='subjects')showSubjectList();if(p==='leaderboard')leaderboard();if(p==='mistakes')mistakes();if(p==='profile')profile();if(p==='admin')admin();window.scrollTo({top:0,behavior:'smooth'})}
+function go(p){if(p==='admin'&&!IS_ADMIN){notify('هذه الصفحة مخصصة للإدارة فقط');return;}document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$('page-'+p).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));$('pageTitle').textContent=titles[p];$('crumbPage').textContent=titles[p];if(p==='home')home();if(p==='subjects')showSubjectList();if(p==='leaderboard')leaderboard();if(p==='mistakes')mistakes();if(p==='profile')profile();if(p==='admin'){admin();fillAppearanceControls();}window.scrollTo({top:0,behavior:'smooth'})}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>go(b.dataset.page));
-function home(){refreshStats();$('homeCourses').innerHTML=db.subjects.map(s=>`<button class="course" onclick="openSubject('${s.id}')"><span class="course-icon">${s.icon}</span><strong>${safe(s.name)}</strong><small>${s.chapters.length} أبواب دراسية</small></button>`).join('');let seen=[];db.questions.forEach(q=>{let k=key(q.subject,q.chapter,q.stage);if(!seen.includes(k))seen.push(k)});$('homeStages').innerHTML=seen.slice(0,4).map(k=>{let [s,c,t]=k.split('|');return `<button class="item" onclick="openSubject('${s}');openChapter('${safe(c)}')"><span class="stage-symbol">✧</span><strong>${safe(t)}</strong><small>${safe(subject(s).name)} · ${safe(c)}</small></button>`}).join('')||'<div class="empty">ستظهر المراحل هنا بعد إضافة الأسئلة.</div>';let arr=[{name:db.profile.name,points:db.answers.reduce((n,a)=>n+a.points,0)}, {name:'أحمد',points:950},{name:'محمد',points:870}].sort((a,b)=>b.points-a.points);$('homeRanks').innerHTML=arr.map((r,i)=>`<div class="rank-item"><span class="rank-no">${i+1}</span><span class="rank-avatar">${safe(r.name[0])}</span><div class="rank-info"><strong>${safe(r.name)}</strong><small>${i===0?'متصدر':'طالب'}</small></div><span class="rank-score">${r.points} نقطة</span></div>`).join('')}
+
+const DEFAULT_APPEARANCE = {
+  accent:'#b58a43', nav:'#111c2d', background:'#f4f5f7', surface:'#ffffff',
+  logo:'', hero:''
+};
+function currentAppearance(){ return {...DEFAULT_APPEARANCE, ...(db.appearance||{})}; }
+function applyAppearance(){
+  const a=currentAppearance(), root=document.documentElement;
+  root.style.setProperty('--gold',a.accent);
+  root.style.setProperty('--gold-soft', tintColor(a.accent));
+  root.style.setProperty('--nav',a.nav);
+  root.style.setProperty('--bg',a.background);
+  root.style.setProperty('--surface',a.surface);
+  const hero=a.hero ? `url("${a.hero}")` : 'none';
+  root.style.setProperty('--hero-image',hero);
+  const mark=document.querySelector('.brand-mark');
+  if(mark) mark.innerHTML=a.logo ? `<img src="${a.logo}" alt="شعار مدارت">` : 'م';
+  const mono=document.querySelector('.monogram');
+  if(mono) mono.innerHTML=a.logo ? `<img src="${a.logo}" alt="شعار مدارت">` : 'مـ';
+}
+function tintColor(hex){
+  const n=parseInt(String(hex).replace('#',''),16);
+  if(Number.isNaN(n)) return '#f5efdf';
+  const r=(n>>16)&255,g=(n>>8)&255,b=n&255;
+  const mix=v=>Math.round(v*.12+255*.88);
+  return `rgb(${mix(r)},${mix(g)},${mix(b)})`;
+}
+function compressImage(file,maxWidth=1200,quality=.78){
+  return new Promise((resolve,reject)=>{
+    if(!file || !file.type.startsWith('image/')) return reject(new Error('اختر ملف صورة صالحاً'));
+    const reader=new FileReader();
+    reader.onerror=()=>reject(new Error('تعذر قراءة الصورة'));
+    reader.onload=()=>{
+      const img=new Image();
+      img.onerror=()=>reject(new Error('الصورة غير صالحة'));
+      img.onload=()=>{
+        const scale=Math.min(1,maxWidth/img.width);
+        const canvas=document.createElement('canvas');
+        canvas.width=Math.round(img.width*scale);
+        canvas.height=Math.round(img.height*scale);
+        const ctx=canvas.getContext('2d');
+        ctx.drawImage(img,0,0,canvas.width,canvas.height);
+        resolve(canvas.toDataURL('image/jpeg',quality));
+      };
+      img.src=reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function previewAppearance(){
+  const a=currentAppearance();
+  const accent=$('accentColor')?.value||a.accent;
+  const nav=$('navColor')?.value||a.nav;
+  const bg=$('backgroundColor')?.value||a.background;
+  const surface=$('surfaceColor')?.value||a.surface;
+  const root=document.documentElement;
+  root.style.setProperty('--gold',accent);
+  root.style.setProperty('--gold-soft',tintColor(accent));
+  root.style.setProperty('--nav',nav);
+  root.style.setProperty('--bg',bg);
+  root.style.setProperty('--surface',surface);
+  const logo=$('appearancePreviewLogo');
+  if(logo && a.logo) logo.innerHTML='<img src="'+a.logo+'" alt="معاينة الشعار" style="width:100%;height:100%;object-fit:cover">';
+  const banner=$('appearancePreviewBanner');
+  if(banner) banner.style.background=nav;
+}
+['accentColor','navColor','backgroundColor','surfaceColor'].forEach(id=>{
+  document.addEventListener('input',e=>{if(e.target && e.target.id===id) previewAppearance();});
+});
+
+async function saveAppearance(){
+  if(!IS_ADMIN){notify('هذه الخاصية للإدارة فقط');return;}
+  const a=currentAppearance();
+  try{
+    const logoFile=$('logoUpload').files[0], heroFile=$('heroUpload').files[0];
+    if(logoFile) a.logo=await compressImage(logoFile,500,.78);
+    if(heroFile) a.hero=await compressImage(heroFile,1500,.75);
+    a.accent=$('accentColor').value;
+    a.nav=$('navColor').value;
+    a.background=$('backgroundColor').value;
+    a.surface=$('surfaceColor').value;
+    db.appearance=a;
+    persist();
+    applyAppearance();
+    previewAppearance();
+    notify('تم حفظ مظهر مدارت على هذا الجهاز');
+  }catch(e){notify(e.message||'تعذر حفظ الصورة');}
+}
+function resetAppearance(){
+  if(!IS_ADMIN){notify('هذه الخاصية للإدارة فقط');return;}
+  db.appearance={...DEFAULT_APPEARANCE};
+  persist();
+  $('logoUpload').value='';$('heroUpload').value='';
+  $('accentColor').value=DEFAULT_APPEARANCE.accent;
+  $('navColor').value=DEFAULT_APPEARANCE.nav;
+  $('backgroundColor').value=DEFAULT_APPEARANCE.background;
+  $('surfaceColor').value=DEFAULT_APPEARANCE.surface;
+  applyAppearance();
+  notify('تمت استعادة المظهر الافتراضي');
+}
+function fillAppearanceControls(){
+  const a=currentAppearance();
+  if($('accentColor')) $('accentColor').value=a.accent;
+  if($('navColor')) $('navColor').value=a.nav;
+  if($('backgroundColor')) $('backgroundColor').value=a.background;
+  if($('surfaceColor')) $('surfaceColor').value=a.surface;
+}
+
+function home(){refreshStats();$('homeCourses').innerHTML=db.subjects.map(s=>`<button class="course" onclick="openSubject('${s.id}')"><span class="course-icon">${s.icon}</span><strong>${safe(s.name)}</strong><small>${s.chapters.length} أبواب دراسية</small></button>`).join('');let seen=[];db.questions.forEach(q=>{let k=key(q.subject,q.chapter,q.stage);if(!seen.includes(k))seen.push(k)});$('homeStages').innerHTML=seen.slice(0,4).map(k=>{let [s,c,t]=k.split('|');return `<button class="item" onclick="openSubject('${s}');openChapter('${safe(c)}')"><span class="stage-symbol">✧</span><strong>${safe(t)}</strong><small>${safe(subject(s).name)} · ${safe(c)}</small></button>`}).join('')||'<div class="empty">ستظهر المراحل هنا بعد إضافة الأسئلة.</div>';let arr=[{name:db.profile.name,points:db.answers.reduce((n,a)=>n+a.points,0)}];$('homeRanks').innerHTML=arr.map((r,i)=>`<div class="rank-item"><span class="rank-no">${i+1}</span><span class="rank-avatar">${safe(r.name[0])}</span><div class="rank-info"><strong>${safe(r.name)}</strong><small>${i===0?'متصدر':'طالب'}</small></div><span class="rank-score">${r.points} نقطة</span></div>`).join('')}
 function showSubjectList(){$('subjectTitle').textContent='اختر المادة';$('subjectList').classList.remove('hidden');$('chapterPanel').classList.add('hidden');$('stagePanel').classList.add('hidden');$('subjectList').innerHTML=db.subjects.map(s=>`<button class="course" onclick="openSubject('${s.id}')"><span class="course-icon">${s.icon}</span><strong>${safe(s.name)}</strong><small>عرض الأبواب والمراحل</small></button>`).join('')}
 function openSubject(id){state.subject=id;let s=subject(id);$('subjectTitle').textContent=s.name;$('subjectList').classList.add('hidden');$('stagePanel').classList.add('hidden');let panel=$('chapterPanel');panel.classList.remove('hidden');panel.innerHTML=`<div class="toolbar"><span class="muted">${safe(s.name)} / أبواب المادة</span><button class="back" onclick="showSubjectList()">كل المواد</button></div><div class="item-grid">${s.chapters.map(c=>`<button class="item" onclick="openChapter('${safe(c).replace(/'/g,"\\'")}')"><strong>▤ ${safe(c)}</strong><small>${db.questions.filter(q=>q.subject===id&&q.chapter===c).length} سؤالاً مضافاً</small></button>`).join('')}</div>`;go('subjects')}
 function openChapter(c){state.chapter=c;let names=[...new Set(qs(state.subject,c,'').map(q=>q.stage))];names=[...new Set(db.questions.filter(q=>q.subject===state.subject&&q.chapter===c).map(q=>q.stage))];Object.keys(db.settings).forEach(k=>{let [s,ch,t]=k.split('|');if(s===state.subject&&ch===c&&!names.includes(t))names.push(t)});$('stagePanel').classList.remove('hidden');$('stagePanel').innerHTML=`<div class="section-head"><h3>${safe(c)} · المراحل</h3><span class="muted">${safe(subject(state.subject).name)}</span></div><div class="item-grid">${names.map((t,i)=>{let o=opts(state.subject,c,t);return `<button class="item" onclick="startQuiz('${safe(t).replace(/'/g,"\\'")}')"><span class="stage-symbol">${['✧','◈','◎','◇'][i%4]}</span><strong>${safe(t)}</strong><small>${qs(state.subject,c,t).length} سؤال · ${o.days} أيام</small><div class="progress"><i style="width:${Math.min(100,qs(state.subject,c,t).length/(o.limit||Math.max(1,qs(state.subject,c,t).length))*100)}%"></i></div></button>`}).join('')||'<div class="empty">لا توجد مراحل مضافة لهذا الباب حتى الآن.</div>'}</div>`}
@@ -153,10 +287,10 @@ function choose(v){if(state.checked)return;state.selected=v;question()}
 function check(){if(state.selected===null)return;let q=state.qs[state.index],k=key(state.subject,state.chapter,state.stage),correct=state.selected===q.correct;if(!db.answers.some(a=>a.qid===q.id&&a.key===k)){db.answers.push({qid:q.id,key:k,correct,points:correct?opts(state.subject,state.chapter,state.stage).points:0});if(!correct&&!db.mistakes.some(m=>m.qid===q.id))db.mistakes.push({qid:q.id,selected:state.selected})}persist();state.checked=true;question()}
 function nextQ(){state.index++;state.selected=null;state.checked=false;question()}
 function result(){let k=key(state.subject,state.chapter,state.stage),a=db.answers.filter(x=>x.key===k),c=a.filter(x=>x.correct).length,percent=a.length?Math.round(c/a.length*100):0,o=opts(state.subject,state.chapter,state.stage);$('quizPanel').innerHTML=`<div style="text-align:center;padding:20px"><div style="font-size:35px;color:var(--gold)">✧</div><h2>اكتملت أسئلة المرحلة</h2><p class="muted">${safe(state.stage)} · ${safe(state.chapter)}</p><div class="stats"><div class="stat"><strong>${c}</strong><small>إجابات صحيحة</small></div><div class="stat"><strong>${a.length}</strong><small>تمت الإجابة</small></div><div class="stat"><strong>${percent}%</strong><small>نسبة الصحة</small></div><div class="stat"><strong>${a.reduce((n,x)=>n+x.points,0)}</strong><small>النقاط</small></div></div><p>${percent>=o.pass?'أحسنت، حققت نسبة النجاح المطلوبة.':'يمكنك مراجعة الأخطاء والمحاولة مجدداً لتحسين مستواك.'}</p><button class="primary" onclick="openSubject('${state.subject}');openChapter('${safe(state.chapter)}')">العودة إلى المراحل</button></div>`}
-function leaderboard(){let mine=db.answers.reduce((n,a)=>n+a.points,0),r=[{name:db.profile.name,points:mine},{name:'أحمد (تجريبي)',points:950},{name:'محمد (تجريبي)',points:870},{name:'يوسف (تجريبي)',points:780}].sort((a,b)=>b.points-a.points);$('rankList').innerHTML=r.map((x,i)=>`<div class="rank-item"><span class="rank-no">${['01','02','03','04'][i]}</span><span class="rank-avatar">${safe(x.name[0])}</span><div class="rank-info"><strong>${safe(x.name)}</strong><small>${x.name===db.profile.name?'حسابك':'مشارك تجريبي'}</small></div><span class="rank-score">${x.points} نقطة</span></div>`).join('')}
+function leaderboard(){let mine=db.answers.reduce((n,a)=>n+a.points,0),r=[{name:db.profile.name,points:mine}];$('rankList').innerHTML=r.map((x,i)=>`<div class="rank-item"><span class="rank-no">${['01','02','03','04'][i]}</span><span class="rank-avatar">${safe(x.name[0])}</span><div class="rank-info"><strong>${safe(x.name)}</strong><small>${x.name===db.profile.name?'حسابك':'مشارك تجريبي'}</small></div><span class="rank-score">${x.points} نقطة</span></div>`).join('')}
 function mistakes(){let arr=db.mistakes.map(m=>({m,q:db.questions.find(q=>q.id===m.qid)})).filter(x=>x.q);$('mistakePanel').innerHTML=arr.length?arr.map(x=>`<div class="rank-item" style="display:block"><strong style="font-size:12px">${safe(x.q.question)}</strong><p class="muted">إجابتك: ${safe(x.m.selected)} · الصحيحة: ${safe(x.q.correct)}</p><p style="font-size:12px;line-height:1.8">${safe(x.q.explain)}</p></div>`).join(''):'<div class="empty">لا توجد أخطاء محفوظة حالياً. ستظهر هنا الأسئلة التي تحتاج إلى مراجعة.</div>'}
 function profile(){ $('profileName').value=db.profile.name;$('profilePhoto').value=db.profile.photo||'';let c=db.answers.filter(a=>a.correct).length,p=db.answers.reduce((n,a)=>n+a.points,0);$('badges').innerHTML=[['✦','بداية الرحلة','أجب عن أول سؤال',db.answers.length>0],['✓','دقة مميزة','10 إجابات صحيحة',c>=10],['◇','جامع النقاط','100 نقطة',p>=100],['◎','متعدد المراحل','جرّب 3 مراحل',new Set(db.answers.map(a=>a.key)).size>=3]].map(b=>`<div class="item" style="opacity:${b[3]?1:.5}"><span class="stage-symbol">${b[0]}</span><strong>${b[1]}</strong><small>${b[2]} · ${b[3]?'مكتسب':'لم يكتسب بعد'}</small></div>`).join('')}
-function saveProfile(){db.profile.name=$('profileName').value.trim()||'طالب فضاء';db.profile.photo=$('profilePhoto').value.trim();persist();$('topName').textContent=db.profile.name;setAvatar('topAvatar');notify('تم حفظ الملف الشخصي')}
+function saveProfile(){db.profile.name=$('profileName').value.trim()||'طالب مدارت';db.profile.photo=$('profilePhoto').value.trim();persist();$('topName').textContent=db.profile.name;setAvatar('topAvatar');notify('تم حفظ الملف الشخصي')}
 function admin(){if(!IS_ADMIN){notify('غير مصرح لك بالدخول إلى لوحة الإدارة');go('home');return;}$('aSubject').innerHTML=db.subjects.map(s=>`<option value="${s.id}">${safe(s.name)}</option>`).join('');$('questionCount').textContent=db.questions.length+' سؤال';$('questionRows').innerHTML=db.questions.map(q=>`<tr><td>${safe(subject(q.subject).name)}</td><td>${safe(q.chapter)}</td><td>${safe(q.stage)}</td><td>${safe(q.question.slice(0,48))}</td><td><button class="danger" onclick="removeQ('${q.id}')">حذف</button></td></tr>`).join('')}
 $('aType').addEventListener('change',e=>{$('aOptionsWrap').classList.toggle('hidden',e.target.value==='tf');$('aCorrect').placeholder=e.target.value==='tf'?'صح أو خطأ':'نص الاختيار الصحيح'});
 function addQuestion(){let s=$('aSubject').value,c=$('aChapter').value.trim(),t=$('aStage').value.trim(),type=$('aType').value,q=$('aQuestion').value.trim(),correct=$('aCorrect').value.trim(),explain=$('aExplain').value.trim(),options=type==='tf'?['صح','خطأ']:$('aOptions').value.split('|').map(x=>x.trim()).filter(Boolean);if(!c||!t||!q||!correct||!options.length){notify('يرجى إكمال بيانات السؤال');return}if(!options.includes(correct)){notify('الإجابة الصحيحة يجب أن تطابق أحد الاختيارات');return}db.questions.push({id:'q'+Date.now(),subject:s,chapter:c,stage:t,type,question:q,options,correct,explain});db.settings[key(s,c,t)]={days:Math.max(1,+$('aDays').value||6),limit:Math.max(0,+$('aLimit').value||20),pass:Math.min(100,Math.max(1,+$('aPass').value||70)),points:Math.max(0,+$('aPoints').value||10)};persist();admin();$('aQuestion').value='';$('aCorrect').value='';$('aExplain').value='';notify('تمت إضافة السؤال وحفظ إعدادات المرحلة')}
@@ -164,72 +298,46 @@ function removeQ(id){if(!confirm('حذف السؤال؟'))return;db.questions=db
 function exportBackup(){let b=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='fadaa-backup.json';a.click();URL.revokeObjectURL(u)}
 function importBackup(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(!d.questions||!d.subjects)throw 0;db={...db,...d};persist();admin();notify('تم استيراد النسخة')}catch(x){notify('ملف غير صالح')}};r.readAsText(f);e.target.value=''}
 syncAdminAccess();
-async function connectTelegramAccount(){
+
+function connectTelegramAccount(){
   const tg = window.Telegram && window.Telegram.WebApp;
   const adminButton = $('adminNav');
-  if (adminButton) adminButton.style.display = 'none'; // fail closed
+  if (adminButton) adminButton.style.display = 'none';
 
   if (!tg) {
-    $('telegramStatus').textContent = 'لربط حسابك، افتح مدارت من زر المنصة داخل بوت تيليجرام.';
+    $('telegramStatus').textContent = 'افتح مدارت من زر المنصة داخل بوت تيليجرام لربط حسابك.';
     return;
   }
 
   tg.ready();
   tg.expand();
 
-  // This is display-only data until the server verifies initData.
-  const previewUser = tg.initDataUnsafe && tg.initDataUnsafe.user;
-  if (previewUser) {
-    const displayName = [previewUser.first_name, previewUser.last_name].filter(Boolean).join(' ');
-    if (displayName) {
-      db.profile.name = displayName;
-      $('topName').textContent = displayName;
-      if (!$('profileName').value) $('profileName').value = displayName;
-    }
-    if (previewUser.photo_url) {
-      db.profile.photo = previewUser.photo_url;
-      setAvatar('topAvatar');
-    }
-    $('telegramStatus').textContent = 'تم التعرف على حساب تيليجرام للعرض. جارٍ التحقق من صلاحية الدخول...';
-  } else {
-    $('telegramStatus').textContent = 'لم تصل بيانات الحساب. افتح المنصة من زر Mini App داخل البوت.';
-  }
-
-  if (!tg.initData) {
-    $('telegramStatus').textContent = 'لم تصل بيانات التحقق من تيليجرام. افتح المنصة من زر Mini App داخل البوت.';
+  const user = tg.initDataUnsafe && tg.initDataUnsafe.user;
+  if (!user) {
+    $('telegramStatus').textContent = 'لم تصل بيانات حساب تيليجرام. افتح المنصة من زر Mini App داخل البوت.';
     return;
   }
 
-  try {
-    // Create this endpoint on your backend. It must validate Telegram initData.
-    const response = await fetch('/api/auth/telegram', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({initData: tg.initData})
-    });
-    if (!response.ok) throw new Error('auth_failed');
-    const result = await response.json();
+  TELEGRAM_USER_ID = String(user.id);
+  IS_ADMIN = TELEGRAM_USER_ID === ADMIN_ID;
 
-    if (!result || result.ok !== true || !result.user) throw new Error('invalid_response');
+  const displayName = [user.first_name, user.last_name].filter(Boolean).join(' ') || 'طالب مدارت';
+  db.profile.name = displayName;
+  if (user.photo_url) db.profile.photo = user.photo_url;
+  persist();
 
-    const verifiedName = result.user.name || result.user.first_name || 'طالب مدارت';
-    db.profile.name = verifiedName;
-    if (result.user.photo_url) db.profile.photo = result.user.photo_url;
-    persist();
-    $('topName').textContent = verifiedName;
-    setAvatar('topAvatar');
+  $('topName').textContent = displayName;
+  setAvatar('topAvatar');
+  if (adminButton) adminButton.style.display = IS_ADMIN ? '' : 'none';
 
-    // Admin UI is revealed only after a verified server response.
-    if (adminButton) adminButton.style.display = result.isAdmin === true ? '' : 'none';
-    $('telegramStatus').textContent = 'مرحباً ' + verifiedName + '، تم ربط حساب تيليجرام بنجاح.';
-  } catch (err) {
-    if (adminButton) adminButton.style.display = 'none';
-    $('telegramStatus').textContent = 'تعذر التحقق من الحساب حالياً. تأكد من إعداد خادم التحقق ثم أعد فتح المنصة من البوت.';
-    console.warn('Telegram authentication was not completed:', err);
-  }
+  $('telegramStatus').textContent = IS_ADMIN
+    ? 'مرحباً بك، تم التعرف على حساب الإدارة.'
+    : 'مرحباً ' + displayName + '، تم ربط حسابك بمدارت.';
 }
 connectTelegramAccount();
+applyAppearance();
 home();refreshStats();
+
 
 </script>
 </body>
