@@ -134,7 +134,12 @@ const ADMIN_ID = "8696029714";
 let TELEGRAM_USER_ID = "";
 let IS_ADMIN = false;
 if (window.Telegram?.WebApp) window.Telegram.WebApp.ready();
-function syncAdminAccess(){ const b=document.getElementById("adminNav"); if(b) b.classList.toggle("hidden", !IS_ADMIN); }
+function syncAdminAccess(){
+  const b = document.getElementById("adminNav");
+  if (!b) return;
+  b.classList.toggle("hidden", !IS_ADMIN);
+  b.style.display = IS_ADMIN ? '' : 'none';
+}
 const BASE=[
 {id:'math',name:'الرياضيات',icon:'∑',chapters:['المصفوفات','المحددات','الباب الثالث']},
 {id:'physics',name:'الفيزياء',icon:'⚛',chapters:['الكهرباء والمغناطيسية','الفيزياء النووية','الباب الثالث']},
@@ -328,8 +333,12 @@ function connectTelegramAccount(){
 
   $('topName').textContent = displayName;
   setAvatar('topAvatar');
-  if (adminButton) adminButton.style.display = IS_ADMIN ? '' : 'none';
+  if (adminButton) {
+    adminButton.classList.toggle('hidden', !IS_ADMIN);
+    adminButton.style.display = IS_ADMIN ? '' : 'none';
+  }
 
+  syncAdminAccess();
   $('telegramStatus').textContent = IS_ADMIN
     ? 'مرحباً بك، تم التعرف على حساب الإدارة.'
     : 'مرحباً ' + displayName + '، تم ربط حسابك بمدارت.';
