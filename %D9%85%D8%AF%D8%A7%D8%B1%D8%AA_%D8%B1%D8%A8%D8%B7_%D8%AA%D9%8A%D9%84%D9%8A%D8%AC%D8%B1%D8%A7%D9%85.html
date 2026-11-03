@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<script src="https://telegram.org/js/telegram-web-app.js?64"></script>
+<title>مدارت</title>
+<style>
+:root{--bg:#f4f5f7;--surface:#fff;--ink:#172235;--muted:#7b8798;--gold:#b58a43;--gold-soft:#f5efdf;--nav:#111c2d;--line:#e8ebef;--green:#278568;--shadow:0 8px 28px rgba(24,37,55,.055)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1440px;margin:auto;min-height:100vh;display:grid;grid-template-columns:255px 1fr}.sidebar{background:var(--nav);color:#fff;padding:26px 18px;display:flex;flex-direction:column;min-height:100vh}.brand{display:flex;align-items:center;gap:12px;padding:0 8px 28px;border-bottom:1px solid #ffffff15}.brand-mark{height:43px;width:43px;border-radius:13px;background:linear-gradient(145deg,#d7bd83,#a47a37);display:grid;place-items:center;color:#152033;font-size:23px}.brand strong{font-size:16px;display:block}.brand small{color:#aab5c4;font-size:11px}.nav-label{color:#7f8b9d;font-size:10px;padding:24px 12px 9px}.nav button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;color:#bac4d2;padding:12px;border-radius:11px;text-align:right;margin:3px 0;font-size:13px}.nav button:hover,.nav button.active{background:#ffffff12;color:#e8c98a}.nav .ico{width:21px;text-align:center;font-size:17px}.side-bottom{margin-top:auto;border-top:1px solid #ffffff15;padding:17px 8px 0;color:#8794a6;font-size:11px;line-height:1.8}.main{min-width:0;padding:27px 34px 35px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:14px}.crumb{font-size:12px;color:var(--muted);margin-bottom:6px}.page-title{font-size:23px;font-weight:700;margin:0}.user{display:flex;align-items:center;gap:10px}.avatar{width:40px;height:40px;border-radius:50%;background:#e8dfcb;color:#73572c;display:grid;place-items:center;font-weight:bold;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.user strong{font-size:12px;display:block}.user small{font-size:10px;color:var(--muted)}.welcome{background:var(--nav);border-radius:18px;color:#fff;padding:27px 30px;display:flex;justify-content:space-between;align-items:center;gap:18px;position:relative;overflow:hidden}.welcome:after{content:"";position:absolute;width:270px;height:270px;border:1px solid #d9bd7b26;border-radius:50%;left:5%;top:-145px;box-shadow:0 0 0 25px #d9bd7b08,0 0 0 55px #d9bd7b06}.welcome-content{position:relative;z-index:1}.welcome .eyebrow{color:#d7bd84;font-size:11px;letter-spacing:.4px}.welcome h2{font-size:25px;line-height:1.55;margin:9px 0 5px}.welcome p{color:#b7c1ce;font-size:12px;line-height:1.8;margin:0 0 16px}.primary{background:#c5a263;color:#182235;border:0;border-radius:9px;padding:11px 17px;font-size:12px;font-weight:bold}.primary:hover{background:#d8b879}.welcome-art{position:relative;z-index:1;width:150px;height:115px;display:grid;place-items:center;flex:none}.monogram{width:92px;height:92px;border:1px solid #d8bd804f;border-radius:50%;display:grid;place-items:center;color:#d9bf87;font-family:Georgia,serif;font-size:35px;box-shadow:0 0 0 12px #ffffff06,0 0 0 25px #ffffff04}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:18px 0 27px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:16px 17px;box-shadow:var(--shadow)}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px}.stat-icon{width:30px;height:30px;border-radius:9px;background:var(--gold-soft);display:grid;place-items:center;color:var(--gold);font-size:15px}.stat strong{font-size:24px;display:block;margin-top:10px;font-weight:700}.stat small{font-size:10px;color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 13px;gap:10px}.section-head h3{font-size:16px;margin:0}.section-head span{font-size:11px;color:var(--muted)}.text-btn{border:0;background:none;color:var(--gold);font-size:11px}.content-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,.8fr);gap:17px}.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.course{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:15px;text-align:right;transition:.18s;box-shadow:var(--shadow);color:var(--ink)}.course:hover{border-color:#d4bd8e;transform:translateY(-2px)}.course-icon{width:38px;height:38px;border-radius:10px;background:#f5f1e8;color:#9c783e;display:grid;place-items:center;font-size:19px;margin-bottom:12px}.course strong{font-size:12px;display:block}.course small{font-size:10px;color:var(--muted);display:block;margin-top:5px}.box{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:17px;box-shadow:var(--shadow)}.rank-item{display:flex;align-items:center;gap:9px;padding:11px 0;border-bottom:1px solid var(--line)}.rank-item:last-child{border:0;padding-bottom:0}.rank-no{width:20px;color:var(--gold);font-size:12px;font-weight:bold}.rank-avatar{width:30px;height:30px;border-radius:50%;background:#edf0f4;display:grid;place-items:center;font-size:11px;color:#4f6076}.rank-info{flex:1}.rank-info strong{font-size:11px;display:block}.rank-info small{font-size:9px;color:var(--muted)}.rank-score{font-size:10px;color:#7c6843}.page{display:none}.page.active{display:block}.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:19px;box-shadow:var(--shadow)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:15px}.muted{color:var(--muted);font-size:11px}.back{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:8px;color:var(--ink);font-size:11px}.item-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:right;color:var(--ink);width:100%}.item:hover{border-color:#cdb27a}.item strong{font-size:12px;display:block;margin-bottom:6px}.item small{font-size:10px;color:var(--muted)}.stage-symbol{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#f5f0e5;color:#9c783e;margin-bottom:9px}.progress{height:5px;background:#edf0f3;border-radius:10px;margin-top:11px;overflow:hidden}.progress i{display:block;height:100%;background:#b99a5e}.question-title{font-size:19px;line-height:1.9;margin:20px 0}.answer-option{width:100%;padding:13px 14px;border:1px solid var(--line);background:#fff;border-radius:9px;text-align:right;margin:5px 0;font-size:13px;color:var(--ink)}.answer-option.selected{border-color:#b9995c;background:#fbf8f0}.answer-option.good{border-color:#55a78a;background:#f0faf5}.answer-option.bad{border-color:#d47b7b;background:#fff5f5}.feedback{background:#f7f8fa;border-radius:10px;padding:14px;margin-top:12px;font-size:12px;line-height:1.9}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#647184}.field input,.field select,.field textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);outline:none;font-size:12px}.field textarea{min-height:76px;resize:vertical}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:right;padding:11px;border-bottom:1px solid var(--line);font-size:11px}th{color:#8a744c}.danger{background:#fff1f1;color:#a43d3d;border:0;padding:7px 9px;border-radius:7px;font-size:10px}.secondary{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 13px;font-size:11px;color:var(--ink)}.empty{text-align:center;padding:26px;color:var(--muted);font-size:12px;border:1px dashed var(--line);border-radius:10px}.pill{font-size:10px;background:#f4f0e7;color:#8b7040;border-radius:20px;padding:5px 9px}.hidden{display:none!important}.footer{text-align:center;color:#9aa3af;font-size:10px;margin-top:30px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#182437;color:white;padding:11px 16px;border-radius:8px;font-size:12px;box-shadow:var(--shadow);z-index:10}
+@media(max-width:1050px){.courses,.item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.content-grid{grid-template-columns:1fr}.app{grid-template-columns:220px 1fr}.main{padding:23px}}
+@media(max-width:720px){.app{display:block}.sidebar{min-height:0;padding:10px 12px;position:sticky;top:0;z-index:5}.brand{padding:0 5px 10px;border:0}.brand-mark{width:34px;height:34px}.brand strong{font-size:13px}.brand small{font-size:9px}.nav-label,.side-bottom{display:none}.nav{display:flex;overflow:auto;gap:4px}.nav button{white-space:nowrap;width:auto;padding:9px 10px;font-size:10px}.main{padding:17px 13px}.topbar{margin-bottom:16px}.page-title{font-size:19px}.welcome{padding:20px}.welcome h2{font-size:21px}.welcome-art{width:90px}.monogram{width:67px;height:67px;font-size:26px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat{padding:12px}.stat strong{font-size:20px}.courses,.item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+@media(max-width:420px){.courses,.item-grid{grid-template-columns:1fr}.welcome-art{display:none}.user strong{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">ف</div><div><strong>مدارت</strong><small>بوابتك نحو التفوق</small></div></div>
+  <div class="nav-label">القائمة الرئيسية</div>
+  <nav class="nav">
+    <button class="active" data-page="home"><span class="ico">⌂</span>الرئيسية</button>
+    <button data-page="subjects"><span class="ico">▦</span>المواد الدراسية</button>
+    <button data-page="leaderboard"><span class="ico">♛</span>لوحة الترتيب</button>
+    <button data-page="mistakes"><span class="ico">✎</span>مراجعة الأخطاء</button>
+    <button data-page="profile"><span class="ico">◉</span>ملفي الشخصي</button>
+    <button id="adminNav" data-page="admin" class="hidden"><span class="ico">⚙</span>إدارة المحتوى</button>
+  </nav>
+  <div class="side-bottom">مدارت<br>منصة تعليمية لطلاب الشهادة الثانوية في ليبيا</div>
+</aside>
+<main class="main">
+  <header class="topbar"><div><div class="crumb">المساحة التعليمية / <span id="crumbPage">الرئيسية</span></div><h1 class="page-title" id="pageTitle">الرئيسية</h1></div><div class="user"><div class="avatar" id="topAvatar">ط</div><div><strong id="topName">طالب فضاء</strong><small>طالب الشهادة الثانوية</small></div></div></header>
+  <div id="telegramStatus" class="muted" style="margin:-15px 0 16px;line-height:1.8"></div>
+
+  <section class="page active" id="page-home">
+    <div class="welcome"><div class="welcome-content"><div class="eyebrow">مساحة التعلم الخاصة بك</div><h2>مرحباً بك في مدارت</h2><p>خطوة جديدة نحو هدفك. اختر مادتك، راجع أبوابها، واختبر فهمك بثبات.</p><button class="primary" onclick="go('subjects')">استكشف المواد</button></div><div class="welcome-art"><div class="monogram">فـ</div></div></div>
+    <div class="stats">
+      <div class="stat"><div class="stat-top"><span>الإجابات الصحيحة</span><span class="stat-icon">✓</span></div><strong id="sCorrect">0</strong><small>واصل التقدم</small></div>
+      <div class="stat"><div class="stat-top"><span>مجموع النقاط</span><span class="stat-icon">◇</span></div><strong id="sPoints">0</strong><small>نقطة مكتسبة</small></div>
+      <div class="stat"><div class="stat-top"><span>المراحل المجربة</span><span class="stat-icon">◎</span></div><strong id="sStages">0</strong><small>رحلتك التعليمية</small></div>
+      <div class="stat"><div class="stat-top"><span>المواد</span><span class="stat-icon">▦</span></div><strong>9</strong><small>مواد الشهادة الثانوية</small></div>
+    </div>
+    <div class="content-grid">
+      <div><div class="section-head"><h3>المواد الدراسية</h3><button class="text-btn" onclick="go('subjects')">عرض جميع المواد ←</button></div><div class="courses" id="homeCourses"></div>
+      <div class="section-head"><h3>تابع رحلتك</h3><span>المراحل المتاحة</span></div><div class="item-grid" id="homeStages"></div></div>
+      <div><div class="section-head"><h3>ترتيب الطلاب</h3><button class="text-btn" onclick="go('leaderboard')">عرض الكل</button></div><div class="box" id="homeRanks"></div><div class="section-head"><h3>تذكير</h3></div><div class="box"><strong style="font-size:12px">التعلم خطوة بخطوة</strong><p class="muted" style="line-height:1.9">لا تتعجل الإجابة. افهم السؤال، اختر إجابتك، ثم اقرأ التفسير لتثبيت المعلومة.</p></div></div>
+    </div>
+  </section>
+
+  <section class="page" id="page-subjects">
+    <div class="toolbar"><div><div class="crumb">المقررات الدراسية</div><h2 style="font-size:18px;margin:0" id="subjectTitle">اختر المادة</h2></div><button class="back" onclick="showSubjectList()">كل المواد</button></div>
+    <div class="courses" id="subjectList"></div><div id="chapterPanel" class="hidden"></div><div id="stagePanel" class="hidden"></div>
+  </section>
+
+  <section class="page" id="page-quiz">
+    <div class="toolbar"><div><div class="crumb" id="quizCrumb">المادة / الباب / المرحلة</div><h2 style="font-size:18px;margin:0">أسئلة المرحلة</h2></div><button class="back" onclick="go('subjects')">العودة للمواد</button></div>
+    <div class="panel" id="quizPanel"></div>
+  </section>
+
+  <section class="page" id="page-leaderboard">
+    <div class="section-head"><h3>لوحة ترتيب الطلاب</h3><span class="pill">ترتيب تجريبي</span></div><div class="panel" id="rankList"></div>
+    <p class="muted">الترتيب الحالي تجريبي ومحفوظ محلياً. الترتيب المشترك بين الطلاب يتطلب قاعدة بيانات وخادماً.</p>
+  </section>
+
+  <section class="page" id="page-mistakes">
+    <div class="section-head"><h3>مراجعة الأخطاء</h3><span class="muted">الأسئلة التي تحتاج إلى مراجعة</span></div><div class="panel" id="mistakePanel"></div>
+  </section>
+
+  <section class="page" id="page-profile">
+    <div class="panel">
+      <div class="toolbar"><div><h3 style="margin:0 0 5px;font-size:15px">الملف الشخصي</h3><span class="muted">عدّل بيانات العرض الخاصة بك</span></div><span class="pill">طالب فضاء</span></div>
+      <div class="form-grid"><div class="field"><label>الاسم</label><input id="profileName" maxlength="40"></div><div class="field"><label>رابط الصورة الشخصية</label><input id="profilePhoto" placeholder="https://example.com/photo.jpg"></div></div>
+      <button class="primary" style="margin-top:13px" onclick="saveProfile()">حفظ التعديلات</button>
+    </div>
+    <div class="section-head"><h3>إنجازاتي</h3></div><div class="item-grid" id="badges"></div>
+  </section>
+
+  <section class="page" id="page-admin">
+    <div class="section-head"><h3>إدارة الأسئلة والمراحل</h3><span class="pill">نموذج تجريبي محلي</span></div>
+    <div class="panel">
+      <p class="muted" style="line-height:1.8;margin-top:0">أضف سؤالاً وحدد إعدادات المرحلة. يمكن تعديل عدد الأسئلة والمدة ونسبة الاجتياز من هنا.</p>
+      <div class="form-grid">
+        <div class="field"><label>المادة</label><select id="aSubject"></select></div>
+        <div class="field"><label>الباب</label><input id="aChapter" value="الباب الأول"></div>
+        <div class="field"><label>اسم المرحلة</label><input id="aStage" value="كوكب عطارد"></div>
+        <div class="field"><label>نوع السؤال</label><select id="aType"><option value="tf">صح أو خطأ</option><option value="mcq">اختيار من متعدد</option></select></div>
+        <div class="field full"><label>السؤال</label><textarea id="aQuestion"></textarea></div>
+        <div class="field" id="aOptionsWrap"><label>الاختيارات (افصل بينها بعلامة |)</label><input id="aOptions" placeholder="اختيار 1 | اختيار 2 | اختيار 3"></div>
+        <div class="field"><label>الإجابة الصحيحة</label><input id="aCorrect" placeholder="صح أو خطأ / نص الاختيار"></div>
+        <div class="field full"><label>التفسير</label><textarea id="aExplain"></textarea></div>
+        <div class="field"><label>مدة المرحلة بالأيام</label><input id="aDays" type="number" min="1" value="6"></div>
+        <div class="field"><label>عدد أسئلة المرحلة (0 = جميع الأسئلة)</label><input id="aLimit" type="number" min="0" value="20"></div>
+        <div class="field"><label>نسبة النجاح المطلوبة %</label><input id="aPass" type="number" min="1" max="100" value="70"></div>
+        <div class="field"><label>نقاط الإجابة الصحيحة</label><input id="aPoints" type="number" min="0" value="10"></div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><button class="primary" onclick="addQuestion()">حفظ السؤال والإعدادات</button><button class="secondary" onclick="exportBackup()">تصدير نسخة احتياطية</button><button class="secondary" onclick="document.getElementById('importBackup').click()">استيراد نسخة</button><input type="file" id="importBackup" accept="application/json" class="hidden" onchange="importBackup(event)"></div>
+    </div>
+    <div class="section-head"><h3>الأسئلة المضافة</h3><span class="muted" id="questionCount"></span></div>
+    <div class="panel table-wrap"><table><thead><tr><th>المادة</th><th>الباب</th><th>المرحلة</th><th>السؤال</th><th>حذف</th></tr></thead><tbody id="questionRows"></tbody></table></div>
+  </section>
+  <footer class="footer">مدارت · بيئة تعليمية منظمة لرحلة أكثر ثباتاً</footer>
+</main>
+</div>
+<div id="toast" class="toast hidden"></div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+const ADMIN_ID = "8696029714";
+const TELEGRAM_USER_ID = String(window.Telegram?.WebApp?.initDataUnsafe?.user?.id ?? "");
+const IS_ADMIN = TELEGRAM_USER_ID === ADMIN_ID;
+if (window.Telegram?.WebApp) window.Telegram.WebApp.ready();
+function syncAdminAccess(){ const b=document.getElementById("adminNav"); if(b) b.classList.toggle("hidden", !IS_ADMIN); }
+const BASE=[
+{id:'math',name:'الرياضيات',icon:'∑',chapters:['المصفوفات','المحددات','الباب الثالث']},
+{id:'physics',name:'الفيزياء',icon:'⚛',chapters:['الكهرباء والمغناطيسية','الفيزياء النووية','الباب الثالث']},
+{id:'chem',name:'الكيمياء',icon:'⚗',chapters:['الباب الأول','الباب الثاني','الباب الثالث']},
+{id:'bio',name:'الأحياء',icon:'⌘',chapters:['الباب الأول','الباب الثاني']},
+{id:'stats',name:'الإحصاء',icon:'▥',chapters:['الباب الأول','الباب الثاني']},
+{id:'mech',name:'الميكانيكا',icon:'◉',chapters:['القوى والاتزان','الحركة','الباب الثالث']},
+{id:'english',name:'اللغة الإنجليزية',icon:'A',chapters:['Unit 1','Unit 2','Unit 3']},
+{id:'arabic',name:'اللغة العربية',icon:'ض',chapters:['النحو','الأدب والنصوص','البلاغة']},
+{id:'islamic',name:'التربية الإسلامية',icon:'۞',chapters:['القرآن الكريم','الحديث الشريف','السيرة']}
+];
+const SAMPLE=[
+{id:'s1',subject:'math',chapter:'المصفوفات',stage:'كوكب عطارد',type:'tf',question:'المصفوفة المربعة هي التي يتساوى فيها عدد الصفوف مع عدد الأعمدة.',options:['صح','خطأ'],correct:'صح',explain:'صحيح؛ المصفوفة المربعة يكون عدد صفوفها مساوياً لعدد أعمدتها.'},
+{id:'s2',subject:'math',chapter:'المصفوفات',stage:'كوكب عطارد',type:'mcq',question:'ما رتبة المصفوفة التي تتكون من 3 صفوف وعمودين؟',options:['2 × 3','3 × 2','3 × 3','2 × 2'],correct:'3 × 2',explain:'رتبة المصفوفة تكتب عدد الصفوف × عدد الأعمدة، أي 3 × 2.'},
+{id:'s3',subject:'physics',chapter:'الكهرباء والمغناطيسية',stage:'كوكب عطارد',type:'tf',question:'تقاس شدة التيار الكهربائي بوحدة الأمبير.',options:['صح','خطأ'],correct:'صح',explain:'الأمبير هو وحدة قياس شدة التيار الكهربائي.'},
+{id:'s4',subject:'chem',chapter:'الباب الأول',stage:'كوكب عطارد',type:'tf',question:'تحتوي ذرة الكربون على أربعة إلكترونات تكافؤ.',options:['صح','خطأ'],correct:'صح',explain:'التوزيع الإلكتروني للكربون هو 2،4؛ لذلك لديه أربعة إلكترونات تكافؤ.'}
+];
+const KEY='fadaa_premium_v1';
+function initial(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x)return {...x,subjects:x.subjects||BASE,questions:x.questions||SAMPLE,answers:x.answers||[],mistakes:x.mistakes||[],settings:x.settings||{},profile:x.profile||{name:'طالب فضاء',photo:''}}}catch(e){}return{subjects:BASE,questions:SAMPLE,answers:[],mistakes:[],settings:{},profile:{name:'طالب فضاء',photo:''}}}
+let db=initial(),state={subject:null,chapter:null,stage:null,qs:[],index:0,selected:null,checked:false};
+const $=id=>document.getElementById(id);
+function persist(){localStorage.setItem(KEY,JSON.stringify(db));refreshStats()}
+function safe(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function notify(m){$('toast').textContent=m;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2200)}
+function subject(id){return db.subjects.find(s=>s.id===id)||db.subjects[0]}
+function key(s,c,t){return s+'|'+c+'|'+t}
+function opts(s,c,t){return db.settings[key(s,c,t)]||{days:6,limit:20,pass:70,points:10}}
+function qs(s,c,t){return db.questions.filter(q=>q.subject===s&&q.chapter===c&&q.stage===t)}
+function setAvatar(id){let el=$(id);if(!el)return;if(db.profile.photo)el.innerHTML='<img src="'+safe(db.profile.photo)+'" onerror="this.parentElement.textContent=\'ط\'">';else el.textContent=(db.profile.name||'ط').charAt(0)}
+function refreshStats(){let correct=db.answers.filter(a=>a.correct).length;$('sCorrect').textContent=correct;$('sPoints').textContent=db.answers.reduce((n,a)=>n+a.points,0);$('sStages').textContent=new Set(db.answers.map(a=>a.key)).size;$('topName').textContent=db.profile.name;setAvatar('topAvatar')}
+const titles={home:'الرئيسية',subjects:'المواد الدراسية',quiz:'الاختبارات',leaderboard:'لوحة الترتيب',mistakes:'مراجعة الأخطاء',profile:'ملفي الشخصي',admin:'إدارة المحتوى'};
+function go(p){if(p==='admin'&&!IS_ADMIN){notify('هذه الصفحة مخصصة للإدارة فقط');return;}document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$('page-'+p).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===p));$('pageTitle').textContent=titles[p];$('crumbPage').textContent=titles[p];if(p==='home')home();if(p==='subjects')showSubjectList();if(p==='leaderboard')leaderboard();if(p==='mistakes')mistakes();if(p==='profile')profile();if(p==='admin')admin();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>go(b.dataset.page));
+function home(){refreshStats();$('homeCourses').innerHTML=db.subjects.map(s=>`<button class="course" onclick="openSubject('${s.id}')"><span class="course-icon">${s.icon}</span><strong>${safe(s.name)}</strong><small>${s.chapters.length} أبواب دراسية</small></button>`).join('');let seen=[];db.questions.forEach(q=>{let k=key(q.subject,q.chapter,q.stage);if(!seen.includes(k))seen.push(k)});$('homeStages').innerHTML=seen.slice(0,4).map(k=>{let [s,c,t]=k.split('|');return `<button class="item" onclick="openSubject('${s}');openChapter('${safe(c)}')"><span class="stage-symbol">✧</span><strong>${safe(t)}</strong><small>${safe(subject(s).name)} · ${safe(c)}</small></button>`}).join('')||'<div class="empty">ستظهر المراحل هنا بعد إضافة الأسئلة.</div>';let arr=[{name:db.profile.name,points:db.answers.reduce((n,a)=>n+a.points,0)}, {name:'أحمد',points:950},{name:'محمد',points:870}].sort((a,b)=>b.points-a.points);$('homeRanks').innerHTML=arr.map((r,i)=>`<div class="rank-item"><span class="rank-no">${i+1}</span><span class="rank-avatar">${safe(r.name[0])}</span><div class="rank-info"><strong>${safe(r.name)}</strong><small>${i===0?'متصدر':'طالب'}</small></div><span class="rank-score">${r.points} نقطة</span></div>`).join('')}
+function showSubjectList(){$('subjectTitle').textContent='اختر المادة';$('subjectList').classList.remove('hidden');$('chapterPanel').classList.add('hidden');$('stagePanel').classList.add('hidden');$('subjectList').innerHTML=db.subjects.map(s=>`<button class="course" onclick="openSubject('${s.id}')"><span class="course-icon">${s.icon}</span><strong>${safe(s.name)}</strong><small>عرض الأبواب والمراحل</small></button>`).join('')}
+function openSubject(id){state.subject=id;let s=subject(id);$('subjectTitle').textContent=s.name;$('subjectList').classList.add('hidden');$('stagePanel').classList.add('hidden');let panel=$('chapterPanel');panel.classList.remove('hidden');panel.innerHTML=`<div class="toolbar"><span class="muted">${safe(s.name)} / أبواب المادة</span><button class="back" onclick="showSubjectList()">كل المواد</button></div><div class="item-grid">${s.chapters.map(c=>`<button class="item" onclick="openChapter('${safe(c).replace(/'/g,"\\'")}')"><strong>▤ ${safe(c)}</strong><small>${db.questions.filter(q=>q.subject===id&&q.chapter===c).length} سؤالاً مضافاً</small></button>`).join('')}</div>`;go('subjects')}
+function openChapter(c){state.chapter=c;let names=[...new Set(qs(state.subject,c,'').map(q=>q.stage))];names=[...new Set(db.questions.filter(q=>q.subject===state.subject&&q.chapter===c).map(q=>q.stage))];Object.keys(db.settings).forEach(k=>{let [s,ch,t]=k.split('|');if(s===state.subject&&ch===c&&!names.includes(t))names.push(t)});$('stagePanel').classList.remove('hidden');$('stagePanel').innerHTML=`<div class="section-head"><h3>${safe(c)} · المراحل</h3><span class="muted">${safe(subject(state.subject).name)}</span></div><div class="item-grid">${names.map((t,i)=>{let o=opts(state.subject,c,t);return `<button class="item" onclick="startQuiz('${safe(t).replace(/'/g,"\\'")}')"><span class="stage-symbol">${['✧','◈','◎','◇'][i%4]}</span><strong>${safe(t)}</strong><small>${qs(state.subject,c,t).length} سؤال · ${o.days} أيام</small><div class="progress"><i style="width:${Math.min(100,qs(state.subject,c,t).length/(o.limit||Math.max(1,qs(state.subject,c,t).length))*100)}%"></i></div></button>`}).join('')||'<div class="empty">لا توجد مراحل مضافة لهذا الباب حتى الآن.</div>'}</div>`}
+function startQuiz(t){state.stage=t;let all=qs(state.subject,state.chapter,t),o=opts(state.subject,state.chapter,t);state.qs=o.limit===0?all:all.slice(0,o.limit);state.index=0;state.selected=null;state.checked=false;$('quizCrumb').textContent=subject(state.subject).name+' / '+state.chapter+' / '+t;go('quiz');question()}
+function question(){let p=$('quizPanel');if(!state.qs.length){p.innerHTML='<div class="empty">لا توجد أسئلة في هذه المرحلة. أضف الأسئلة من إدارة المحتوى.</div>';return}if(state.index>=state.qs.length){result();return}let q=state.qs[state.index];p.innerHTML=`<div class="toolbar"><span class="muted">السؤال ${state.index+1} من ${state.qs.length}</span><span class="pill">لا يوجد مؤقت</span></div><div class="progress"><i style="width:${state.index/state.qs.length*100}%"></i></div><div class="question-title">${safe(q.question)}</div><div>${q.options.map(o=>`<button class="answer-option ${state.selected===o?'selected':''}" ${state.checked?'disabled':''} onclick="choose('${safe(o).replace(/'/g,"\\'")}')">${safe(o)}</button>`).join('')}</div>${state.checked?`<div class="feedback"><strong style="color:${state.selected===q.correct?'#278568':'#b34f4f'}">${state.selected===q.correct?'إجابة صحيحة':'إجابة غير صحيحة'}</strong><br>الإجابة الصحيحة: <b>${safe(q.correct)}</b><br>${safe(q.explain||'لا يوجد تفسير مضاف.')}</div>`:''}<div class="toolbar" style="margin-top:17px"><button class="back" onclick="go('subjects')">إنهاء المحاولة</button>${state.checked?'<button class="primary" onclick="nextQ()">السؤال التالي ←</button>':`<button class="primary" onclick="check()" ${state.selected===null?'disabled':''}>تأكيد الإجابة</button>`}</div>`}
+function choose(v){if(state.checked)return;state.selected=v;question()}
+function check(){if(state.selected===null)return;let q=state.qs[state.index],k=key(state.subject,state.chapter,state.stage),correct=state.selected===q.correct;if(!db.answers.some(a=>a.qid===q.id&&a.key===k)){db.answers.push({qid:q.id,key:k,correct,points:correct?opts(state.subject,state.chapter,state.stage).points:0});if(!correct&&!db.mistakes.some(m=>m.qid===q.id))db.mistakes.push({qid:q.id,selected:state.selected})}persist();state.checked=true;question()}
+function nextQ(){state.index++;state.selected=null;state.checked=false;question()}
+function result(){let k=key(state.subject,state.chapter,state.stage),a=db.answers.filter(x=>x.key===k),c=a.filter(x=>x.correct).length,percent=a.length?Math.round(c/a.length*100):0,o=opts(state.subject,state.chapter,state.stage);$('quizPanel').innerHTML=`<div style="text-align:center;padding:20px"><div style="font-size:35px;color:var(--gold)">✧</div><h2>اكتملت أسئلة المرحلة</h2><p class="muted">${safe(state.stage)} · ${safe(state.chapter)}</p><div class="stats"><div class="stat"><strong>${c}</strong><small>إجابات صحيحة</small></div><div class="stat"><strong>${a.length}</strong><small>تمت الإجابة</small></div><div class="stat"><strong>${percent}%</strong><small>نسبة الصحة</small></div><div class="stat"><strong>${a.reduce((n,x)=>n+x.points,0)}</strong><small>النقاط</small></div></div><p>${percent>=o.pass?'أحسنت، حققت نسبة النجاح المطلوبة.':'يمكنك مراجعة الأخطاء والمحاولة مجدداً لتحسين مستواك.'}</p><button class="primary" onclick="openSubject('${state.subject}');openChapter('${safe(state.chapter)}')">العودة إلى المراحل</button></div>`}
+function leaderboard(){let mine=db.answers.reduce((n,a)=>n+a.points,0),r=[{name:db.profile.name,points:mine},{name:'أحمد (تجريبي)',points:950},{name:'محمد (تجريبي)',points:870},{name:'يوسف (تجريبي)',points:780}].sort((a,b)=>b.points-a.points);$('rankList').innerHTML=r.map((x,i)=>`<div class="rank-item"><span class="rank-no">${['01','02','03','04'][i]}</span><span class="rank-avatar">${safe(x.name[0])}</span><div class="rank-info"><strong>${safe(x.name)}</strong><small>${x.name===db.profile.name?'حسابك':'مشارك تجريبي'}</small></div><span class="rank-score">${x.points} نقطة</span></div>`).join('')}
+function mistakes(){let arr=db.mistakes.map(m=>({m,q:db.questions.find(q=>q.id===m.qid)})).filter(x=>x.q);$('mistakePanel').innerHTML=arr.length?arr.map(x=>`<div class="rank-item" style="display:block"><strong style="font-size:12px">${safe(x.q.question)}</strong><p class="muted">إجابتك: ${safe(x.m.selected)} · الصحيحة: ${safe(x.q.correct)}</p><p style="font-size:12px;line-height:1.8">${safe(x.q.explain)}</p></div>`).join(''):'<div class="empty">لا توجد أخطاء محفوظة حالياً. ستظهر هنا الأسئلة التي تحتاج إلى مراجعة.</div>'}
+function profile(){ $('profileName').value=db.profile.name;$('profilePhoto').value=db.profile.photo||'';let c=db.answers.filter(a=>a.correct).length,p=db.answers.reduce((n,a)=>n+a.points,0);$('badges').innerHTML=[['✦','بداية الرحلة','أجب عن أول سؤال',db.answers.length>0],['✓','دقة مميزة','10 إجابات صحيحة',c>=10],['◇','جامع النقاط','100 نقطة',p>=100],['◎','متعدد المراحل','جرّب 3 مراحل',new Set(db.answers.map(a=>a.key)).size>=3]].map(b=>`<div class="item" style="opacity:${b[3]?1:.5}"><span class="stage-symbol">${b[0]}</span><strong>${b[1]}</strong><small>${b[2]} · ${b[3]?'مكتسب':'لم يكتسب بعد'}</small></div>`).join('')}
+function saveProfile(){db.profile.name=$('profileName').value.trim()||'طالب فضاء';db.profile.photo=$('profilePhoto').value.trim();persist();$('topName').textContent=db.profile.name;setAvatar('topAvatar');notify('تم حفظ الملف الشخصي')}
+function admin(){if(!IS_ADMIN){notify('غير مصرح لك بالدخول إلى لوحة الإدارة');go('home');return;}$('aSubject').innerHTML=db.subjects.map(s=>`<option value="${s.id}">${safe(s.name)}</option>`).join('');$('questionCount').textContent=db.questions.length+' سؤال';$('questionRows').innerHTML=db.questions.map(q=>`<tr><td>${safe(subject(q.subject).name)}</td><td>${safe(q.chapter)}</td><td>${safe(q.stage)}</td><td>${safe(q.question.slice(0,48))}</td><td><button class="danger" onclick="removeQ('${q.id}')">حذف</button></td></tr>`).join('')}
+$('aType').addEventListener('change',e=>{$('aOptionsWrap').classList.toggle('hidden',e.target.value==='tf');$('aCorrect').placeholder=e.target.value==='tf'?'صح أو خطأ':'نص الاختيار الصحيح'});
+function addQuestion(){let s=$('aSubject').value,c=$('aChapter').value.trim(),t=$('aStage').value.trim(),type=$('aType').value,q=$('aQuestion').value.trim(),correct=$('aCorrect').value.trim(),explain=$('aExplain').value.trim(),options=type==='tf'?['صح','خطأ']:$('aOptions').value.split('|').map(x=>x.trim()).filter(Boolean);if(!c||!t||!q||!correct||!options.length){notify('يرجى إكمال بيانات السؤال');return}if(!options.includes(correct)){notify('الإجابة الصحيحة يجب أن تطابق أحد الاختيارات');return}db.questions.push({id:'q'+Date.now(),subject:s,chapter:c,stage:t,type,question:q,options,correct,explain});db.settings[key(s,c,t)]={days:Math.max(1,+$('aDays').value||6),limit:Math.max(0,+$('aLimit').value||20),pass:Math.min(100,Math.max(1,+$('aPass').value||70)),points:Math.max(0,+$('aPoints').value||10)};persist();admin();$('aQuestion').value='';$('aCorrect').value='';$('aExplain').value='';notify('تمت إضافة السؤال وحفظ إعدادات المرحلة')}
+function removeQ(id){if(!confirm('حذف السؤال؟'))return;db.questions=db.questions.filter(q=>q.id!==id);persist();admin();notify('تم حذف السؤال')}
+function exportBackup(){let b=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='fadaa-backup.json';a.click();URL.revokeObjectURL(u)}
+function importBackup(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(!d.questions||!d.subjects)throw 0;db={...db,...d};persist();admin();notify('تم استيراد النسخة')}catch(x){notify('ملف غير صالح')}};r.readAsText(f);e.target.value=''}
+syncAdminAccess();
+async function connectTelegramAccount(){
+  const tg = window.Telegram && window.Telegram.WebApp;
+  const adminButton = $('adminNav');
+  if (adminButton) adminButton.style.display = 'none'; // fail closed
+
+  if (!tg) {
+    $('telegramStatus').textContent = 'لربط حسابك، افتح مدارت من زر المنصة داخل بوت تيليجرام.';
+    return;
+  }
+
+  tg.ready();
+  tg.expand();
+
+  // This is display-only data until the server verifies initData.
+  const previewUser = tg.initDataUnsafe && tg.initDataUnsafe.user;
+  if (previewUser) {
+    const displayName = [previewUser.first_name, previewUser.last_name].filter(Boolean).join(' ');
+    if (displayName) {
+      db.profile.name = displayName;
+      $('topName').textContent = displayName;
+      if (!$('profileName').value) $('profileName').value = displayName;
+    }
+    if (previewUser.photo_url) {
+      db.profile.photo = previewUser.photo_url;
+      setAvatar('topAvatar');
+    }
+    $('telegramStatus').textContent = 'تم التعرف على حساب تيليجرام للعرض. جارٍ التحقق من صلاحية الدخول...';
+  } else {
+    $('telegramStatus').textContent = 'لم تصل بيانات الحساب. افتح المنصة من زر Mini App داخل البوت.';
+  }
+
+  if (!tg.initData) {
+    $('telegramStatus').textContent = 'لم تصل بيانات التحقق من تيليجرام. افتح المنصة من زر Mini App داخل البوت.';
+    return;
+  }
+
+  try {
+    // Create this endpoint on your backend. It must validate Telegram initData.
+    const response = await fetch('/api/auth/telegram', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({initData: tg.initData})
+    });
+    if (!response.ok) throw new Error('auth_failed');
+    const result = await response.json();
+
+    if (!result || result.ok !== true || !result.user) throw new Error('invalid_response');
+
+    const verifiedName = result.user.name || result.user.first_name || 'طالب مدارت';
+    db.profile.name = verifiedName;
+    if (result.user.photo_url) db.profile.photo = result.user.photo_url;
+    persist();
+    $('topName').textContent = verifiedName;
+    setAvatar('topAvatar');
+
+    // Admin UI is revealed only after a verified server response.
+    if (adminButton) adminButton.style.display = result.isAdmin === true ? '' : 'none';
+    $('telegramStatus').textContent = 'مرحباً ' + verifiedName + '، تم ربط حساب تيليجرام بنجاح.';
+  } catch (err) {
+    if (adminButton) adminButton.style.display = 'none';
+    $('telegramStatus').textContent = 'تعذر التحقق من الحساب حالياً. تأكد من إعداد خادم التحقق ثم أعد فتح المنصة من البوت.';
+    console.warn('Telegram authentication was not completed:', err);
+  }
+}
+connectTelegramAccount();
+home();refreshStats();
+
+</script>
+</body>
+</html>
